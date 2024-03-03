@@ -1,9 +1,9 @@
 {
-  "name": "Uputt-Userbot",
-  "description": "[Uputt-Userbot] Selamat pakai, Luh songong gw Cipok",
-  "logo": "https://telegra.ph/file/f4c1d8888bf604781c163.jpg",
-  "keywords": ["telegram", "userbot", "Uputt-Userbot", "modular", "python"],
-  "repository": "https://github.com/iamuput/Uputt-Userbot",
+  "name": "Aether-Userbot",
+  "description": "[Aether-Userbot] Selamat pakai, Luh songong gw Cipok",
+  "logo": "https://telegra.ph//file/4ee0d0108ebac618a59f1.jpg",
+  "keywords": ["telegram", "userbot", "Aether-Userbot", "modular", "python"],
+  "repository": "https://github.com/yushafahad17/usebrot",
   "stack": "container",
   "env": {
     "API_KEY": {
