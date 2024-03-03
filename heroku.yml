@@ -1,0 +1,5 @@
+build: 
+  docker:
+      iamuput: Dockerfile
+run:
+   iamuput: bash start

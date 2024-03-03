@@ -1,0 +1,56 @@
+{
+  "name": "Uputt-Userbot",
+  "description": "[Uputt-Userbot] Selamat pakai, Luh songong gw Cipok",
+  "logo": "https://telegra.ph/file/f4c1d8888bf604781c163.jpg",
+  "keywords": ["telegram", "userbot", "Uputt-Userbot", "modular", "python"],
+  "repository": "https://github.com/iamuput/Uputt-Userbot",
+  "stack": "container",
+  "env": {
+    "API_KEY": {
+      "description": "Dapatkan API KEY di Grup » https://t.me/UputtSupport » Lalu ketik /get api atau di web my.telegram.org Masukan yg APP ID Telegram",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Dapatkan API Hash di Grup » https://t.me/UputtSupport » Lalu ketik /get api atau di web my.telegram.org",
+      "required": true
+    },
+    "STRING_SESSION": {
+      "description": "Dapatkan String Session di Grup » https://t.me/UputtSupport » Lalu ketik #string",
+      "required": true
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Nama App heroku, Nama App yang paling pertama di isi (liat paling atas jangan buta map)",
+      "required": true
+    },
+    "HEROKU_API_KEY": {
+      "description": "Ambil Heroku API KEY mu disini » https://dashboard.heroku.com/account",
+      "required": true
+    },
+    "OPENAI_API_KEY": {
+      "description": "Ambil key OPENAI_API_KEY mu disini » https://platform.openai.com/account/api-keys",
+      "required": false
+    }
+  },
+    "addons": [
+    {
+    "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    }
+  ],
+  "formation": {
+    "iamuput": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  }
+}
